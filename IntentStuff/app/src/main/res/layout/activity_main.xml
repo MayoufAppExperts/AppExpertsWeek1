@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.theappexperts.intentstuff.MainActivity">
+
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Camera" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/btnCamera"
+        android:text="Set Alarm" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/btnAlarm"
+        android:text="Email" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnCamera"
+        android:layout_marginTop="10dp"
+        android:text="Calendar" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMusic"
+        android:layout_alignBottom="@+id/btnMusic"
+        android:layout_alignStart="@+id/btnEmail"
+        android:text="Phone" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCalendar"
+        android:layout_alignBottom="@+id/btnCalendar"
+        android:layout_alignStart="@+id/btnAlarm"
+        android:text="Music" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnCalendar"
+        android:layout_marginTop="15dp"
+        android:text="Map" />
+
+    <Button
+        android:onClick="LaunchIntents"
+        android:id="@+id/btnContacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnMusic"
+        android:layout_alignTop="@+id/btnMap"
+        android:text="Contacts" />
+</RelativeLayout>
